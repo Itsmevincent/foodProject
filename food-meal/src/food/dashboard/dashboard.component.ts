@@ -59,4 +59,8 @@ export class DashboardComponent {
       })
     }
   }
+
+  refresh(): void {
+    window.location.reload();
+  }
 }

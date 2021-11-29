@@ -9,6 +9,7 @@ const routes: Routes = [];
     RouterModule.forRoot([
       { path: 'food-dash', component: DashboardComponent },
       { path: '', redirectTo: '/food-dash', pathMatch: 'full' },
+      { path: '**', component: DashboardComponent },
     ])],
   exports: [RouterModule]
 })

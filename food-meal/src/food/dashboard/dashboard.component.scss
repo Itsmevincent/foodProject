@@ -52,7 +52,8 @@
 .margin-bt {
   margin-bottom: 20px;
 }
-.dish-image, .dish-video {
+.dish-image,
+.dish-video {
   width: 350px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
@@ -67,4 +68,12 @@ td {
 }
 td {
   text-align: center;
+}
+
+.load-btn {
+  margin-left: 10px;
+  border: 0px;
+  height: 36px;
+  border-radius: 0.25em;
+  width: 36px;
 }
