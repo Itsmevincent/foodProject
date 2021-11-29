@@ -28,18 +28,18 @@ export class DashboardComponent {
       for (i = 1; i <= 20; i++) {
         let ingredientValue = "";
         let measureValue = "";
-        let ingredientDetails = { "ingredient": "", "measure": "" }
         ingredientValue = this.foodDetails['strIngredient' + i];
         measureValue = this.foodDetails['strMeasure' + i]
         if (ingredientValue && measureValue) {
-          this.addIngredientDetails(ingredientDetails, ingredientValue, measureValue);
+          this.addIngredientDetails(ingredientValue, measureValue);
         } else if (ingredientValue && measureValue && measureValue == "") {
-          this.addIngredientDetails(ingredientDetails, ingredientValue, measureValue);
+          this.addIngredientDetails(ingredientValue, measureValue);
         }
       }
     }
   }
-  addIngredientDetails(ingredientDetails: any, ingredient: any, measure: any) {
+  addIngredientDetails(ingredient: any, measure: any) {
+    let ingredientDetails = { "ingredient": "", "measure": "" }
     ingredientDetails.ingredient = ingredient;
     ingredientDetails.measure = measure;
     this.ingredients.push(ingredientDetails);
