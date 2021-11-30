@@ -32,7 +32,7 @@
                 <h3>Ingredients</h3>
             </label>
 
-            <table style="width: 100%;">
+            <table>
                 <tr *ngFor="let item of ingredients">
                     <td>{{item.ingredient}}</td>
                     <td>{{item.measure}}</td>
@@ -55,7 +55,7 @@
             <label class="food-heading">
                 <h3>Instructions</h3>
             </label>
-            <div style="text-align: center;">
+            <div>
                 <p>{{foodDetails.strInstructions}} </p>
             </div>
         </div>
